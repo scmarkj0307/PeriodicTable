@@ -1,0 +1,236 @@
+body{
+	background: #0a0a0a;
+	font-family: "Poppins",sans-serief;
+	margin-top: 50px;
+}
+
+body h1{
+	margin:50 0 50 50;
+	padding: 0 0 20pz;
+	color: #fffffc;
+	text-align: center;
+	
+}
+
+body p{
+	margin: 0 20 0 0;
+	padding: 0 0 20pz;
+	color: #fffffc;
+	text-align: center;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+.menu{
+	display: grid;
+	grid-template-columns: repeat(8,10%);
+	grid-template-rows: repeat(2,60%);
+	grid-gap: 10px;
+	margin: 0;
+	padding-top:4%;
+	padding-left:9%;
+}
+
+
+.periodic-table{
+	display: grid;
+	grid-template-columns: repeat(18,50px);
+	grid-template-rows: repeat(11,50px);
+	grid-gap: 10px;
+	margin: auto;
+	max-width:1200px;
+	padding-bottom: 5%;
+	justify-content: center;
+}
+
+.periodic-element{
+	padding: 2.5px;
+	position: relative;
+	z-index: 1;
+	cursor: default;
+	transition: all 0.3s ease;
+	
+}
+
+.periodic-element .periodic-element-inner{
+	background: #0d0d0c;
+	padding: 5px 10px;
+	width: calc(90% - 15px);
+	height: calc(90% - 5px);
+	transition: inherit;
+	
+}
+
+
+.periodic-element .letter{
+	font: 600 20.1538px "Poppins",sans-serief;
+	margin: 0 0 0 0;
+	text-align: center;
+	transition: 0.8s ease 600ms;
+	
+}
+
+.periodic-element .name{
+	font: 400 6px "Poppins",sans-serief;
+	text-align: center;
+	
+}
+
+
+.periodic-element:hover{
+	transform: scale(2.2);
+	z-index: 10;
+}
+
+.periodic-element:hover .periodic-element-inner{
+	background: transparent;
+}
+
+.periodic-element:hover .letter , .periodic-element:hover .name {
+	-webkit-text-fill-collor: #222;
+}
+
+.periodic-element:hover:after{
+	top:100%;
+	opacity: 1;
+}
+
+.periodic-element{
+	cursor:pointer;
+}
+
+.yllw{
+	background: linear-gradient(to bottom right,#c7cc8d 0%,#a19d27 100%);
+}
+
+.yllw .letter, .yllw .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gb{
+	background: linear-gradient(to bottom right,#56ab2f 0%,#a8e063 100%);
+}
+
+.gb .letter, .gb .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pw{
+	background: linear-gradient(to bottom right,#eacda3 0%,#d6ae7b 100%);
+}
+
+.pw .letter, .pw .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.er{
+	background: linear-gradient(to bottom right,#43cea2 0%,#185a9d 100%);
+}
+
+.er .letter, .er .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.r{
+	background: linear-gradient(to bottom right,#141e30 0%,#243b55 100%);
+}
+
+.r .letter, .r .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.c{
+	background: linear-gradient(to bottom right,#c33764  0%,#1d2671 100%);
+}
+
+.c .letter, .c .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.bm{
+	background: linear-gradient(to bottom right,#ff512f  0%,#dd2476 100%);
+}
+
+.bm .letter, .bm .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.tr{
+	background: linear-gradient(to bottom right,#eecda3  0%,#ef629f 100%);
+}
+
+.tr .letter, .tr .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.d{
+	background: linear-gradient(to bottom right,#ffd89b  0%,#19547b 100%);
+}
+
+.d .letter, .d .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.f{
+	background: linear-gradient(to bottom right,#000428  0%,#004e92 100%);
+}
+
+.f .letter, .f .name{
+	background: #fffffc;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+.empty-space-1{
+	grid-column: 2/span 16;
+	grid-row: 1;
+}
+
+.empty-space-2{
+	grid-column: 3/span 10;
+	grid-row: 2;
+}
+
+.empty-space-3{
+	grid-column: 3/span 10;
+	grid-row: 3;
+}
+
+.empty-space-4{
+	grid-column:1/span 18;
+	grid-row: 8;
+}
+
+.empty-space-5{
+	grid-column:1/span 4;
+	grid-row: 9;
+}
+
+
+
+	
